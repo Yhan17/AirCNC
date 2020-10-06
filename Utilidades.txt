@@ -1,0 +1,26 @@
+yarn add express: microframework com funcionalidades prontas
+
+yarn add nodemon -D: Dependencia pra ir atualizando o servidor conforme alteração
+
+//Como pegar query params
+exemplo: /users?idade=20
+Acessar a info: req.query.idade
+
+//Como pegar route params
+exemplo: /users/:id
+Acessar a info: req.params.id
+
+//Como pegar body params
+exemplo: {
+	"nome": "blablablabla,
+	etc...
+}
+Acessar a info: req.body
+
+//Informa para o servidor que vai aceitar requisição do tipo json
+app.use(express.json());
+
+
+
+yarn add multer: permite o uso de multipart-form-data no express
+
